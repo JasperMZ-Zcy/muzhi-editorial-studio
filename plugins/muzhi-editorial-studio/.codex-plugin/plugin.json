@@ -1,0 +1,27 @@
+{
+  "name": "muzhi-editorial-studio",
+  "version": "1.1.0",
+  "description": "杂志插画视频工作流：37项质量否决、阶段校验、媒体检查、创意版本锁与本地成本台账。",
+  "author": {
+    "name": "牧之远见"
+  },
+  "skills": "./skills/",
+  "interface": {
+    "displayName": "牧之远见·杂志插画制作",
+    "shortDescription": "可配置品牌的杂志插画视频工作流与质量检查。",
+    "longDescription": "从输入、故事板、样片到封面发布包的可审计工作流。内含37项质量否决、真实媒体检查、版本锁和本地成本台账；生成、渲染、账号与费用仍由使用者现有工具和授权决定。",
+    "developerName": "牧之远见",
+    "category": "Productivity",
+    "capabilities": [
+      "Write"
+    ],
+    "brandColor": "#D95D45",
+    "composerIcon": "./assets/logo.svg",
+    "logo": "./assets/logo.svg",
+    "defaultPrompt": [
+      "按杂志插画工作流继续当前项目，先读取已有状态，不重复询问已经确认的范围。",
+      "为当前项目加入新创意，只修改本次授权范围，保留已经通过的内容。",
+      "把当前项目的封面与发布文案整理为单层交付包，不重新编码已认可的视频。"
+    ]
+  }
+}

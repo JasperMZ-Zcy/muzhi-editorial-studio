@@ -1,0 +1,124 @@
+{
+  "schema_version": "1.0",
+  "$comment": "Evidence records are file fingerprints. A report or approval record may additionally use json_pointer (for example /gates/storyboard) to select one object in a shared existing JSON file. Report target and approval target_sha256 must agree. Required approval objects contain status=approved plus source, quote and approved_at. Full-program review records contain kind, coverage=full_program, started_at, completed_at and observer{type:human|ai,name,tool|method}; AI remains explicitly AI and never proves a human experience. execution_kind=render is only animatic/pilot/preview/master; pilot may instead use generation; batch_generate cannot render. New BGM uses editorial_operation=animatic plus execution_kind=music_generation, generation_entry_path and operation_binding.generation_entry set to the locked music_brief; it needs storyboard approval and this-round budget authorization but no future FullFilm entry, completed animatic or generated BGM.",
+  "pipeline_type": "editorial-magazine-explainer",
+  "operation": "batch_generate",
+  "authorization": {
+    "source": "user approval location or quoted authorization",
+    "approved_at": "YYYY-MM-DDThh:mm:ss+08:00",
+    "budget_authorization": {
+      "source": "required only when execution_kind is music_generation",
+      "quote": "explicit current-round music budget authorization",
+      "approved_at": "YYYY-MM-DDThh:mm:ss+08:00"
+    }
+  },
+  "skill_lock": {
+    "path": "__ACTUAL_INSTALLED_SKILL_PATH__",
+    "sha256": "REPLACE_WITH_ACTUAL_SHA256",
+    "version": "actual installed SKILL.md metadata.execution_revision"
+  },
+  "identity": {
+    "brand_profile": {
+      "path": "artifacts/approved-brand-profile.json",
+      "sha256": "REPLACE_WITH_ACTUAL_SHA256"
+    },
+    "design": {
+      "path": "design.md",
+      "sha256": "REPLACE_WITH_ACTUAL_SHA256"
+    }
+  },
+  "locks": {
+    "script": {
+      "path": "artifacts/locked-script.md",
+      "sha256": "REPLACE_WITH_ACTUAL_SHA256"
+    },
+    "evidence_bundle": {
+      "path": "artifacts/current-evidence-bundle.json",
+      "sha256": "REPLACE_WITH_ACTUAL_SHA256"
+    },
+    "recording": {
+      "path": "audio/final-recording.wav",
+      "sha256": "REPLACE_WITH_ACTUAL_SHA256"
+    },
+    "music_brief": {
+      "path": "artifacts/music-brief.md",
+      "sha256": "REPLACE_WITH_ACTUAL_SHA256"
+    },
+    "subtitles": {
+      "path": "artifacts/locked-subtitles.srt",
+      "sha256": "REPLACE_WITH_ACTUAL_SHA256"
+    },
+    "entry": {
+      "path": "FullFilm.tsx",
+      "sha256": "REPLACE_WITH_ACTUAL_SHA256"
+    },
+    "forbidden_changes": [
+      {
+        "path": "audio/final-recording.wav",
+        "sha256": "REPLACE_WITH_ACTUAL_SHA256"
+      }
+    ]
+  },
+  "operation_binding": {
+    "inputs_sha256": "SHA256_OF_THE_CANONICAL_ACTUAL_PARAMETER_OBJECT",
+    "entry": {
+      "path": "FullFilm.tsx",
+      "sha256": "REPLACE_WITH_ACTUAL_SHA256"
+    },
+    "generation_entry": {
+      "path": "artifacts/music-brief.md",
+      "sha256": "REPLACE_WITH_ACTUAL_SHA256"
+    }
+  },
+  "gates": {
+    "storyboard": {
+      "report": { "path": "artifacts/storyboard-review.json", "sha256": "REPLACE_WITH_ACTUAL_SHA256" },
+      "target": { "path": "artifacts/director-storyboard.json", "sha256": "REPLACE_WITH_ACTUAL_SHA256" },
+      "approval": { "path": "artifacts/storyboard-approval.json", "sha256": "REPLACE_WITH_ACTUAL_SHA256" }
+    },
+    "animatic": {
+      "report": { "path": "artifacts/animatic-review.json", "sha256": "REPLACE_WITH_ACTUAL_SHA256" },
+      "target": { "path": "output/full-animatic.mp4", "sha256": "REPLACE_WITH_ACTUAL_SHA256" },
+      "approval": { "path": "artifacts/animatic-approval.json", "sha256": "REPLACE_WITH_ACTUAL_SHA256" }
+    },
+    "pilot": {
+      "report": { "path": "artifacts/pilot-review.json", "sha256": "REPLACE_WITH_ACTUAL_SHA256" },
+      "target": { "path": "output/pilot.mp4", "sha256": "REPLACE_WITH_ACTUAL_SHA256" },
+      "approval": { "path": "artifacts/pilot-approval.json", "sha256": "REPLACE_WITH_ACTUAL_SHA256" }
+    },
+    "batch_assets": {
+      "report": { "path": "artifacts/batch-assets-report.json", "sha256": "REPLACE_WITH_ACTUAL_SHA256" },
+      "target": { "path": "artifacts/batch-assets-manifest.json", "sha256": "REPLACE_WITH_ACTUAL_SHA256" }
+    },
+    "dynamic_duration": {
+      "report": { "path": "artifacts/dynamic-duration-report.json", "sha256": "REPLACE_WITH_ACTUAL_SHA256" },
+      "target": { "path": "artifacts/dynamic-asset-duration-records.json", "sha256": "REPLACE_WITH_ACTUAL_SHA256" }
+    },
+    "rough_cut": {
+      "report": { "path": "artifacts/rough-cut-review.json", "sha256": "REPLACE_WITH_ACTUAL_SHA256" },
+      "target": { "path": "output/full-rough-cut.mp4", "sha256": "REPLACE_WITH_ACTUAL_SHA256" },
+      "approval": { "path": "artifacts/rough-cut-approval.json", "sha256": "REPLACE_WITH_ACTUAL_SHA256" }
+    },
+    "technical": {
+      "report": { "path": "artifacts/final-technical-report.json", "sha256": "REPLACE_WITH_ACTUAL_SHA256" },
+      "target": { "path": "output/formal-master.mp4", "sha256": "REPLACE_WITH_ACTUAL_SHA256" }
+    },
+    "visual": {
+      "report": { "path": "artifacts/final-visual-review.json", "sha256": "REPLACE_WITH_ACTUAL_SHA256" },
+      "target": { "path": "output/formal-master.mp4", "sha256": "REPLACE_WITH_ACTUAL_SHA256" }
+    },
+    "continuous_viewing": {
+      "report": { "path": "artifacts/continuous-viewing.json", "sha256": "REPLACE_WITH_ACTUAL_SHA256" },
+      "target": { "path": "output/formal-master.mp4", "sha256": "REPLACE_WITH_ACTUAL_SHA256" }
+    },
+    "full_listening": {
+      "report": { "path": "artifacts/full-listening.json", "sha256": "REPLACE_WITH_ACTUAL_SHA256" },
+      "target": { "path": "output/formal-master.mp4", "sha256": "REPLACE_WITH_ACTUAL_SHA256" }
+    }
+  },
+  "facts": {
+    "requires_official_facts": false,
+    "scope_reason": "No external school, college, year, policy or admissions claim is being made in this operation.",
+    "claims": []
+  }
+}

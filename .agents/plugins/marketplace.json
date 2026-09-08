@@ -1,0 +1,20 @@
+{
+  "name": "muzhi-editorial",
+  "interface": {
+    "displayName": "Muzhi Editorial"
+  },
+  "plugins": [
+    {
+      "name": "muzhi-editorial-studio",
+      "source": {
+        "source": "local",
+        "path": "./plugins/muzhi-editorial-studio"
+      },
+      "policy": {
+        "installation": "AVAILABLE",
+        "authentication": "ON_INSTALL"
+      },
+      "category": "Productivity"
+    }
+  ]
+}

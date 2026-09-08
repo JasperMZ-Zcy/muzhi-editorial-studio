@@ -1,0 +1,56 @@
+{
+  "schema_version": "2.0",
+  "project_id": "__FILL__",
+  "project_root": "__FILL_ABSOLUTE_PROJECT_ROOT__",
+  "status": "waiting_user_review",
+  "actual_visual_unit_count": 1,
+  "reviewed_visual_unit_count": 0,
+  "all_shot_ids": ["S01"],
+  "shot_entries": [
+    {
+      "shot_id": "S01",
+      "shot_family": "independent_component_animation",
+      "contract_path": "__FILL__",
+      "contract_sha256": "__FILL_64_HEX__",
+      "script_txt_path": "__FILL__",
+      "script_txt_sha256": "__FILL_64_HEX__",
+      "keyframe_path": "__FILL__",
+      "keyframe_sha256": "__FILL_64_HEX__",
+      "multi_stage_keyframe_required": true,
+      "multi_stage_keyframe_present": false,
+      "independent_layer_plan_present": false,
+      "layer_plan_path": "__FILL__",
+      "layer_plan_sha256": "__FILL_64_HEX__",
+      "container_native_text_plan_present": false,
+      "adaptive_composition_fit_plan_present": false
+    }
+  ],
+  "whole_film_artifacts": {
+    "plain_language_director_brief": {"path": "__FILL__", "sha256": "__FILL_64_HEX__"},
+    "director_storyboard_contract": {"path": "__FILL__", "sha256": "__FILL_64_HEX__"},
+    "visual_storyboard": {"path": "__FILL__", "sha256": "__FILL_64_HEX__"},
+    "full_voiced_animatic": {"path": "__FILL__", "sha256": "__FILL_64_HEX__"},
+    "semantic_visual_routing_audit": {"path": "__FILL__", "sha256": "__FILL_64_HEX__"},
+    "i2v_duration_coverage_audit": {"path": "__FILL__", "sha256": "__FILL_64_HEX__"},
+    "new_bgm_brief_and_hash_comparison": {"path": "__FILL__", "sha256": "__FILL_64_HEX__"},
+    "keyframe_overview": {"path": "__FILL__", "sha256": "__FILL_64_HEX__"},
+    "rhythm_density_audit": {"path": "__FILL__", "sha256": "__FILL_64_HEX__"},
+    "typography_role_and_form_audit": {"path": "__FILL__", "sha256": "__FILL_64_HEX__"},
+    "empty_semantic_container_audit": {"path": "__FILL__", "sha256": "__FILL_64_HEX__"},
+    "container_native_text_and_fit_plan_audit": {"path": "__FILL__", "sha256": "__FILL_64_HEX__"},
+    "layer_exit_and_metaphor_audit": {"path": "__FILL__", "sha256": "__FILL_64_HEX__"},
+    "flow_shot_list": {"path": "__FILL__", "sha256": "__FILL_64_HEX__"},
+    "gate2_checklist": {"path": "__FILL__", "sha256": "__FILL_64_HEX__"}
+  },
+  "approval": {
+    "director_interpretation_user_approved": false,
+    "visual_storyboard_user_approved": false,
+    "full_voiced_animatic_user_approved": false,
+    "brand_06_signoff": "pending",
+    "technical_07_signoff": "pending",
+    "whole_package_user_approved": false,
+    "approved_by": "品牌",
+    "user_approval_quote": "__FILL__",
+    "approved_at": "__FILL__"
+  }
+}

@@ -1,0 +1,112 @@
+{
+  "schema_version": "1.2",
+  "project_id": "__FILL__",
+  "project_root": "__FILL_ABSOLUTE_PROJECT_ROOT__",
+  "revision": "v2",
+  "based_on_version": "v1",
+  "rollback_version_path": "__FILL_EXISTING_COMPLETE_ROLLBACK__",
+  "rollback_verified_complete": false,
+  "user_request": "__FILL_VERBATIM_OR_PRECISE_SUMMARY__",
+  "approved_at": "__FILL__",
+  "user_approval_confirmed": false,
+  "allowed_changes": ["__FILL_ONLY_THE_REQUESTED_CHANGE__"],
+  "forbidden_changes": [
+    "master_clock",
+    "caption_text_and_timing",
+    "approved_flow_files_speed_actions_crop_and_timing"
+  ],
+  "lock_domains": [
+    {"domain": "audio", "applicable": true, "locked": true, "change_allowed": false, "fingerprint_roles": ["narration_master"], "invariants": ["sample_count", "duration", "sha256"]},
+    {"domain": "captions", "applicable": true, "locked": true, "change_allowed": false, "fingerprint_roles": ["caption_source"], "invariants": ["text", "count", "first_last_timing", "sha256"]},
+    {"domain": "timeline", "applicable": true, "locked": true, "change_allowed": false, "fingerprint_roles": ["timeline_manifest"], "invariants": ["scene_boundaries", "action_cues", "text_cues"]},
+    {"domain": "flow", "applicable": true, "locked": true, "change_allowed": false, "fingerprint_roles": ["flow_sources_manifest", "flow_placement_manifest"], "invariants": ["source_files", "normalized_files", "speed", "crop_window", "absolute_timing", "action_order"]},
+    {"domain": "bgm", "applicable": true, "locked": true, "change_allowed": false, "fingerprint_roles": ["bgm_master", "mix_manifest"], "invariants": ["source", "fade", "ducking", "timing"]},
+    {"domain": "components", "applicable": true, "locked": false, "change_allowed": true, "fingerprint_roles": [], "invariants": ["only_approved_local_component_changes"]},
+    {"domain": "typography", "applicable": true, "locked": true, "change_allowed": false, "fingerprint_roles": ["typography_manifest"], "invariants": ["wording", "timing", "forms"]}
+  ],
+  "visual_change_contract": {
+    "flow_policy": {
+      "locked_unchanged": true,
+      "expected_clip_count": 0,
+      "invariants": ["frame_size", "crop_window", "speed", "action_order", "absolute_timing"]
+    },
+    "local_component_scale_percent": {
+      "target_range": [8, 12],
+      "allowed_tuning_range": [4, 15],
+      "per_shot_records_required": true,
+      "below_range_requires_reason": true,
+      "outside_or_zero_requires_approved_reason": true,
+      "center_concentration_required": true
+    },
+    "native_container_text_binding": {
+      "required": true,
+      "local_compositor_required": true,
+      "parent_local_coordinates_required": true,
+      "clip_to_container_required": true,
+      "moves_with_parent_required": true,
+      "perspective_match_required": true,
+      "floating_overlay_allowed": false,
+      "per_container_records_required": true
+    },
+    "adaptive_composition_fit": {
+      "required": true,
+      "fit_mode": "contain",
+      "target_scale_change_percent_range": [8, 12],
+      "allowed_tuning_percent_range": [4, 15],
+      "hard_safe_bounds_px": {"left": 72, "top": 300, "right": 1008, "bottom": 1290},
+      "preferred_stage_bounds_px": {"left": 96, "top": 380, "right": 984, "bottom": 1280},
+      "preferred_primary_axis_fill_ratio_range": [0.72, 0.9],
+      "maximum_width_fill_ratio": 0.9,
+      "maximum_height_fill_ratio": 0.92,
+      "maximum_center_offset_x_px": 90,
+      "per_shot_tuning_required": true,
+      "safe_region_and_main_visual_protection_required": true
+    },
+    "full_illustration_inner_scale_percent": {
+      "target_range": [4, 6],
+      "per_shot_records_required": true,
+      "outside_or_zero_requires_approved_reason": true,
+      "stay_inside_original_frame": true,
+      "critical_crop_allowed": false
+    },
+    "caption_centerward_move": {
+      "required": true,
+      "baseline_manifest_required": true,
+      "font_size_change_required": true,
+      "minimum_font_increase_px": 1,
+      "font_size_change_exception_reason": "",
+      "per_caption_baseline_and_final_position_required": true,
+      "per_shot_avoidance_required": true,
+      "platform_safe_area_required": true,
+      "zero_or_reverse_move_requires_approved_reason": true,
+      "explanatory_typography_locked": true
+    },
+    "caption_contrast_strategy": {
+      "foreground_style": "__FILL__",
+      "edge_or_backing_style": "__FILL__",
+      "keyword_style": "__FILL__",
+      "minimum_contrast_ratio_target": 4.5,
+      "style_matches_editorial_animation": true
+    },
+    "main_visual_protection": {
+      "protected_roles": ["people", "core_actions", "result_states", "required_explanatory_typography"],
+      "overlap_allowed": false
+    }
+  },
+  "locked_fingerprints": [
+    {"role": "narration_master", "path": "__FILL__", "sha256": "__FILL_64_HEX__"},
+    {"role": "caption_source", "path": "__FILL__", "sha256": "__FILL_64_HEX__"},
+    {"role": "timeline_manifest", "path": "__FILL__", "sha256": "__FILL_64_HEX__"},
+    {"role": "flow_sources_manifest", "path": "__FILL__", "sha256": "__FILL_64_HEX__"},
+    {"role": "flow_placement_manifest", "path": "__FILL__", "sha256": "__FILL_64_HEX__"},
+    {"role": "bgm_master", "path": "__FILL__", "sha256": "__FILL_64_HEX__"},
+    {"role": "mix_manifest", "path": "__FILL__", "sha256": "__FILL_64_HEX__"},
+    {"role": "typography_manifest", "path": "__FILL__", "sha256": "__FILL_64_HEX__"},
+    {"role": "explanatory_typography_manifest", "path": "__FILL__", "sha256": "__FILL_64_HEX__"}
+  ],
+  "required_regression_checks": [
+    "locked_fingerprint_mismatch_count_is_zero",
+    "changed_continuous_ranges_reviewed",
+    "full_encoded_master_watched"
+  ]
+}

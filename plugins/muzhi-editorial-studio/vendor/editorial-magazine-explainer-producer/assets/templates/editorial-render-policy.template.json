@@ -1,0 +1,65 @@
+{
+  "schema_version": "1.0",
+  "brand_id": "__FILL_APPROVED_BRAND_ID__",
+  "entry": "__FILL_ENTRY_TSX__",
+  "composition_source": {
+    "path": "__FILL_CURRENT_COMPOSITION_SOURCE__",
+    "sha256": "__FILL_REAL_SHA256__"
+  },
+  "approved_identity_source": {
+    "path": "__FILL_APPROVED_BRAND_OR_VOICE_SOURCE__",
+    "sha256": "__FILL_REAL_SHA256__"
+  },
+  "audio_report": {
+    "path": "__FILL_ACTUAL_PROCESSING_REPORT__",
+    "sha256": "__FILL_REAL_SHA256__"
+  },
+  "visual_style": {
+    "path": "__FILL_IMPORTED_STYLE_JSON__",
+    "sha256": "__FILL_REAL_SHA256__"
+  },
+  "captions": {
+    "path": "__FILL_LOCKED_CAPTION_JSON__",
+    "sha256": "__FILL_REAL_SHA256__"
+  },
+  "revision_lock": {
+    "path": "__FILL_CURRENT_REVISION_LOCK__",
+    "sha256": "__FILL_REAL_SHA256__"
+  },
+  "voice": {
+    "profile_id": "__FILL_APPROVED_PROFILE__",
+    "pitch": 1,
+    "sample_count": 0,
+    "sample_rate": 48000
+  },
+  "caption_style": {
+    "font_family": "__FILL_APPROVED_FONT__",
+    "fill": "__FILL_APPROVED_FILL__",
+    "stroke": "__FILL_APPROVED_OUTLINE__",
+    "stroke_width": 0,
+    "keyword_color": "__FILL_APPROVED_HIGHLIGHT__",
+    "rounded_plate": false
+  },
+  "rendered_identity": {
+    "path": "__FILL_ACTUAL_RENDERED_DOM_REPORT__",
+    "sha256": "__FILL_REAL_SHA256__"
+  },
+  "entry_chain": [
+    {
+      "path": "__FILL_ENTRY_PATH__",
+      "sha256": "__FILL_REAL_SHA256__",
+      "required_bindings": ["__FILL_ACTUAL_IMPORT_AND_COMPONENT_BINDINGS__"]
+    }
+  ],
+  "minimum_caption_font_px": 48,
+  "minimum_highlighted_keywords": 1,
+  "outro_strings": [
+    "__FILL_FOLLOW_CTA__",
+    "__FILL_BRAND_NAME__",
+    "__FILL_SLOGAN__"
+  ],
+  "outro_start_ms": 0,
+  "native_shot_ids": [
+    "__FILL_NATIVE_SHOT_IDS__"
+  ]
+}

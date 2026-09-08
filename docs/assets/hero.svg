@@ -1,0 +1,52 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="1200" height="630" viewBox="0 0 1200 630" role="img" aria-labelledby="title desc">
+  <title id="title">牧之远见杂志插画制作工作流示意</title>
+  <desc id="desc">原创抽象纸张、质量检查和交付管线插图，不是产品界面截图。</desc>
+  <defs>
+    <linearGradient id="bg" x1="0" y1="0" x2="1" y2="1">
+      <stop offset="0" stop-color="#fff8ed"/>
+      <stop offset="1" stop-color="#f4e1ce"/>
+    </linearGradient>
+    <linearGradient id="card" x1="0" y1="0" x2="1" y2="1">
+      <stop offset="0" stop-color="#d95d45"/>
+      <stop offset="1" stop-color="#a83d35"/>
+    </linearGradient>
+    <filter id="shadow" x="-20%" y="-20%" width="140%" height="150%">
+      <feDropShadow dx="0" dy="18" stdDeviation="15" flood-color="#6a3c33" flood-opacity=".18"/>
+    </filter>
+  </defs>
+  <rect width="1200" height="630" fill="url(#bg)"/>
+  <circle cx="1036" cy="108" r="174" fill="#f1bd78" opacity=".42"/>
+  <circle cx="119" cy="567" r="205" fill="#ef9b77" opacity=".19"/>
+  <path d="M0 462C156 406 223 502 367 443S616 350 768 424s251 58 432-18v224H0z" fill="#e9b56f" opacity=".32"/>
+  <g filter="url(#shadow)" transform="translate(108 106)">
+    <rect x="0" y="34" width="485" height="342" rx="28" fill="#efcf9b" transform="rotate(-7 0 34)"/>
+    <rect x="28" y="11" width="485" height="342" rx="28" fill="#fffdf8" transform="rotate(4 28 11)"/>
+    <rect x="51" y="0" width="485" height="342" rx="28" fill="url(#card)"/>
+    <path d="M78 237c74-114 150-90 212-22 52-101 145-93 218 22v78H78z" fill="#f8d9a4" opacity=".92"/>
+    <circle cx="411" cy="107" r="57" fill="#ffd98d"/>
+    <path d="M284 188c33-65 80-80 142-40-12 43-39 74-88 85-29-2-51-16-54-45z" fill="#70433c"/>
+    <path d="M125 192c30-47 70-60 119-29-6 36-30 63-72 75-27-5-43-20-47-46z" fill="#7b5142"/>
+    <rect x="88" y="48" width="255" height="14" rx="7" fill="#fff6e8" opacity=".95"/>
+    <rect x="88" y="75" width="184" height="9" rx="4.5" fill="#ffdca4"/>
+    <rect x="88" y="101" width="150" height="9" rx="4.5" fill="#ffdca4" opacity=".83"/>
+    <rect x="88" y="290" width="177" height="11" rx="5.5" fill="#fff5e4" opacity=".9"/>
+  </g>
+  <g transform="translate(684 130)">
+    <text x="0" y="0" fill="#8b3a31" font-family="Noto Sans SC, Microsoft YaHei, sans-serif" font-size="26" font-weight="700" letter-spacing="4">CODEX PLUGIN · WORKFLOW ILLUSTRATION</text>
+    <text x="0" y="75" fill="#35251f" font-family="Noto Serif SC, SimSun, serif" font-size="56" font-weight="700">杂志插画制作</text>
+    <text x="0" y="120" fill="#5c463d" font-family="Noto Sans SC, Microsoft YaHei, sans-serif" font-size="24">从真实输入到可审计交付的质量与成本边界</text>
+    <g transform="translate(0 170)">
+      <rect width="135" height="126" rx="18" fill="#fffdf8" stroke="#e4c9ad" stroke-width="2"/>
+      <path d="M37 38h61M37 61h45M37 84h52" stroke="#d95d45" stroke-width="8" stroke-linecap="round"/>
+      <text x="67" y="111" text-anchor="middle" fill="#5c463d" font-family="Noto Sans SC, Microsoft YaHei, sans-serif" font-size="17" font-weight="700">输入锁定</text>
+      <rect x="157" width="135" height="126" rx="18" fill="#fffdf8" stroke="#e4c9ad" stroke-width="2"/>
+      <path d="M191 46l34-19 35 19-35 20zM191 48v35l34 19 35-19V48" fill="none" stroke="#d95d45" stroke-width="6" stroke-linejoin="round"/>
+      <text x="224" y="111" text-anchor="middle" fill="#5c463d" font-family="Noto Sans SC, Microsoft YaHei, sans-serif" font-size="17" font-weight="700">阶段检查</text>
+      <rect x="314" width="135" height="126" rx="18" fill="#fffdf8" stroke="#e4c9ad" stroke-width="2"/>
+      <path d="M358 36h47v45h-47z" fill="none" stroke="#d95d45" stroke-width="6" rx="5"/>
+      <path d="M371 57h22M371 69h14" stroke="#d95d45" stroke-width="5" stroke-linecap="round"/>
+      <text x="381" y="111" text-anchor="middle" fill="#5c463d" font-family="Noto Sans SC, Microsoft YaHei, sans-serif" font-size="17" font-weight="700">本地台账</text>
+    </g>
+    <text x="0" y="365" fill="#79665b" font-family="Noto Sans SC, Microsoft YaHei, sans-serif" font-size="18">37 项否决 · 媒体实测 · 供应商无关交付合同</text>
+  </g>
+</svg>

@@ -1,0 +1,416 @@
+{
+  "source": "vendor/editorial-magazine-explainer-producer/SKILL.md",
+  "source_sha256": "1cb4c14f2148123c591d92d2cfc1651ae81ee3cfd31e765281b01d9e01d23f92",
+  "vetoes": [
+    {
+      "id": "V01",
+      "text": "未经15—20秒真实动态样片批准即开始批量生图、批量Flow、全片动画或正式合成；",
+      "source_line": 365,
+      "enforcement": "真实媒体/结构校验加对应视听或语义审核；不能用布尔值替代实际证据",
+      "references": [
+        "skills/magazine-production/references/quality-contract.md",
+        "scripts/production_runner.py",
+        "vendor/editorial-magazine-explainer-producer/scripts/validate_production_enforcement.py"
+      ]
+    },
+    {
+      "id": "V02",
+      "text": "未完成人话版导演理解、完整故事板和全片有声动态分镜，或任一项未获用户批准即批量生产；",
+      "source_line": 366,
+      "enforcement": "真实媒体/结构校验加对应视听或语义审核；不能用布尔值替代实际证据",
+      "references": [
+        "skills/magazine-production/references/quality-contract.md",
+        "scripts/production_runner.py",
+        "vendor/editorial-magazine-explainer-producer/scripts/validate_production_enforcement.py"
+      ]
+    },
+    {
+      "id": "V03",
+      "text": "预设固定章节/镜头数量、为凑数碎切，或故事板没有覆盖完整母钟；",
+      "source_line": 367,
+      "enforcement": "真实媒体/结构校验加对应视听或语义审核；不能用布尔值替代实际证据",
+      "references": [
+        "skills/magazine-production/references/quality-contract.md",
+        "scripts/production_runner.py",
+        "vendor/editorial-magazine-explainer-producer/scripts/validate_production_enforcement.py"
+      ]
+    },
+    {
+      "id": "V04",
+      "text": "可理解画面段没有明确表现路线、观众结论、动画动作、阅读停留和前后接力；",
+      "source_line": 368,
+      "enforcement": "真实媒体/结构校验加对应视听或语义审核；不能用布尔值替代实际证据",
+      "references": [
+        "skills/magazine-production/references/quality-contract.md",
+        "vendor/editorial-magazine-explainer-producer/references/revision-qa-and-closure.md"
+      ]
+    },
+    {
+      "id": "V05",
+      "text": "准确学校名、数字、表格、名单或政策正文交给图生视频直接生成；",
+      "source_line": 369,
+      "enforcement": "真实媒体/结构校验加对应视听或语义审核；不能用布尔值替代实际证据",
+      "references": [
+        "skills/magazine-production/references/quality-contract.md",
+        "vendor/editorial-magazine-explainer-producer/references/revision-qa-and-closure.md"
+      ]
+    },
+    {
+      "id": "V06",
+      "text": "官方材料没有原始来源，或自制图表没有可读来源脚注与项目证据；",
+      "source_line": 370,
+      "enforcement": "真实媒体/结构校验加对应视听或语义审核；不能用布尔值替代实际证据",
+      "references": [
+        "skills/magazine-production/references/quality-contract.md",
+        "vendor/editorial-magazine-explainer-producer/references/revision-qa-and-closure.md"
+      ]
+    },
+    {
+      "id": "V07",
+      "text": "官方材料直接全屏硬贴浏览器/PDF/UI，没有经过`design.md`统一证据载体和转场；",
+      "source_line": 371,
+      "enforcement": "真实媒体/结构校验加对应视听或语义审核；不能用布尔值替代实际证据",
+      "references": [
+        "skills/magazine-production/references/quality-contract.md",
+        "vendor/editorial-magazine-explainer-producer/references/revision-qa-and-closure.md"
+      ]
+    },
+    {
+      "id": "V08",
+      "text": "空纸、纯色或无语义背景只剩唯一大字和字幕，形成普通PPT页或连续轮播；",
+      "source_line": 372,
+      "enforcement": "真实媒体/结构校验加对应视听或语义审核；不能用布尔值替代实际证据",
+      "references": [
+        "skills/magazine-production/references/quality-contract.md",
+        "vendor/editorial-magazine-explainer-producer/references/revision-qa-and-closure.md"
+      ]
+    },
+    {
+      "id": "V09",
+      "text": "图生视频预计时长短于对应口播却没有续接方案，或使用明显慢放、尾帧停死、无意义循环和静态闪图补时长；",
+      "source_line": 373,
+      "enforcement": "真实媒体/结构校验加对应视听或语义审核；不能用布尔值替代实际证据",
+      "references": [
+        "skills/magazine-production/references/quality-contract.md",
+        "scripts/production_runner.py",
+        "vendor/editorial-magazine-explainer-producer/scripts/validate_dynamic_asset_duration.py"
+      ]
+    },
+    {
+      "id": "V10",
+      "text": "单条图生视频连续使用超过10.0秒且没有用户针对该镜头的明确例外批准；",
+      "source_line": 374,
+      "enforcement": "真实媒体/结构校验加对应视听或语义审核；不能用布尔值替代实际证据",
+      "references": [
+        "skills/magazine-production/references/quality-contract.md",
+        "scripts/production_runner.py",
+        "vendor/editorial-magazine-explainer-producer/scripts/validate_dynamic_asset_duration.py"
+      ]
+    },
+    {
+      "id": "V11",
+      "text": "项目缺少已批准并通过哈希校验的`design.md`，或生图/图生视频没有引用锁定风格板；",
+      "source_line": 375,
+      "enforcement": "真实媒体/结构校验加对应视听或语义审核；不能用布尔值替代实际证据",
+      "references": [
+        "skills/magazine-production/references/quality-contract.md",
+        "scripts/production_runner.py",
+        "vendor/editorial-magazine-explainer-producer/scripts/validate_production_enforcement.py"
+      ]
+    },
+    {
+      "id": "V12",
+      "text": "只给图生视频供应商纯文字，让它从空白重新决定人物、场景和画风；",
+      "source_line": 376,
+      "enforcement": "真实媒体/结构校验加对应视听或语义审核；不能用布尔值替代实际证据",
+      "references": [
+        "skills/magazine-production/references/quality-contract.md",
+        "vendor/editorial-magazine-explainer-producer/references/revision-qa-and-closure.md"
+      ]
+    },
+    {
+      "id": "V13",
+      "text": "未经完整低清粗剪批准即渲染正式母版；",
+      "source_line": 377,
+      "enforcement": "真实媒体/结构校验加对应视听或语义审核；不能用布尔值替代实际证据",
+      "references": [
+        "skills/magazine-production/references/quality-contract.md",
+        "scripts/production_runner.py",
+        "vendor/editorial-magazine-explainer-producer/scripts/validate_production_enforcement.py"
+      ]
+    },
+    {
+      "id": "V14",
+      "text": "画面像PPT、像廉价AI、画风混乱或动画僵硬，却用机器QA合格继续推进；",
+      "source_line": 378,
+      "enforcement": "真实媒体/结构校验加对应视听或语义审核；不能用布尔值替代实际证据",
+      "references": [
+        "skills/magazine-production/references/quality-contract.md",
+        "vendor/editorial-magazine-explainer-producer/references/revision-qa-and-closure.md"
+      ]
+    },
+    {
+      "id": "V15",
+      "text": "人物、视频或浅色纸张上出现无稳定实体底的裸白解释字；",
+      "source_line": 379,
+      "enforcement": "真实媒体/结构校验加对应视听或语义审核；不能用布尔值替代实际证据",
+      "references": [
+        "skills/magazine-production/references/quality-contract.md",
+        "vendor/editorial-magazine-explainer-producer/references/revision-qa-and-closure.md"
+      ]
+    },
+    {
+      "id": "V16",
+      "text": "组件文字使用全片绝对坐标假装嵌入，或卡片缩小后核心字低于手机舒适阅读；",
+      "source_line": 380,
+      "enforcement": "真实媒体/结构校验加对应视听或语义审核；不能用布尔值替代实际证据",
+      "references": [
+        "skills/magazine-production/references/quality-contract.md",
+        "vendor/editorial-magazine-explainer-producer/references/revision-qa-and-closure.md"
+      ]
+    },
+    {
+      "id": "V17",
+      "text": "品牌slogan与普通字幕同时重复显示；",
+      "source_line": 381,
+      "enforcement": "真实媒体/结构校验加对应视听或语义审核；不能用布尔值替代实际证据",
+      "references": [
+        "skills/magazine-production/references/quality-contract.md",
+        "vendor/editorial-magazine-explainer-producer/references/revision-qa-and-closure.md"
+      ]
+    },
+    {
+      "id": "V18",
+      "text": "用整图轻动冒充语义动画；",
+      "source_line": 382,
+      "enforcement": "真实媒体/结构校验加对应视听或语义审核；不能用布尔值替代实际证据",
+      "references": [
+        "skills/magazine-production/references/quality-contract.md",
+        "vendor/editorial-magazine-explainer-producer/references/revision-qa-and-closure.md"
+      ]
+    },
+    {
+      "id": "V19",
+      "text": "主构图闪切到观众无法看清，或短阶段无例外记录；",
+      "source_line": 383,
+      "enforcement": "真实媒体/结构校验加对应视听或语义审核；不能用布尔值替代实际证据",
+      "references": [
+        "skills/magazine-production/references/quality-contract.md",
+        "vendor/editorial-magazine-explainer-producer/references/revision-qa-and-closure.md"
+      ]
+    },
+    {
+      "id": "V20",
+      "text": "空白气泡、票据、输入框、选择卡等语义容器；",
+      "source_line": 384,
+      "enforcement": "真实媒体/结构校验加对应视听或语义审核；不能用布尔值替代实际证据",
+      "references": [
+        "skills/magazine-production/references/quality-contract.md",
+        "vendor/editorial-magazine-explainer-producer/references/revision-qa-and-closure.md"
+      ]
+    },
+    {
+      "id": "V21",
+      "text": "解释文字复述字幕、不可读小字、全片同一种卡片；",
+      "source_line": 385,
+      "enforcement": "真实媒体/结构校验加对应视听或语义审核；不能用布尔值替代实际证据",
+      "references": [
+        "skills/magazine-production/references/quality-contract.md",
+        "vendor/editorial-magazine-explainer-producer/references/revision-qa-and-closure.md"
+      ]
+    },
+    {
+      "id": "V22",
+      "text": "新主层接管后旧主层仍停留抢焦；",
+      "source_line": 386,
+      "enforcement": "真实媒体/结构校验加对应视听或语义审核；不能用布尔值替代实际证据",
+      "references": [
+        "skills/magazine-production/references/quality-contract.md",
+        "vendor/editorial-magazine-explainer-producer/references/revision-qa-and-closure.md"
+      ]
+    },
+    {
+      "id": "V23",
+      "text": "动作、解释文字和口播关键词错位；",
+      "source_line": 387,
+      "enforcement": "真实媒体/结构校验加对应视听或语义审核；不能用布尔值替代实际证据",
+      "references": [
+        "skills/magazine-production/references/quality-contract.md",
+        "vendor/editorial-magazine-explainer-producer/references/revision-qa-and-closure.md"
+      ]
+    },
+    {
+      "id": "V24",
+      "text": "生成文字、乱码、水印、Logo、二维码或 Flow 源声音进入正式片；",
+      "source_line": 388,
+      "enforcement": "真实媒体/结构校验加对应视听或语义审核；不能用布尔值替代实际证据",
+      "references": [
+        "skills/magazine-production/references/quality-contract.md",
+        "vendor/editorial-magazine-explainer-producer/references/revision-qa-and-closure.md"
+      ]
+    },
+    {
+      "id": "V25",
+      "text": "正式画面出现镜号、场景说明、调试标记；",
+      "source_line": 389,
+      "enforcement": "真实媒体/结构校验加对应视听或语义审核；不能用布尔值替代实际证据",
+      "references": [
+        "skills/magazine-production/references/quality-contract.md",
+        "vendor/editorial-magazine-explainer-producer/references/revision-qa-and-closure.md"
+      ]
+    },
+    {
+      "id": "V26",
+      "text": "用户要求青年明亮音但仍使用未处理原声，或处理造成母钟漂移；",
+      "source_line": 390,
+      "enforcement": "真实媒体/结构校验加对应视听或语义审核；不能用布尔值替代实际证据",
+      "references": [
+        "skills/magazine-production/references/quality-contract.md",
+        "vendor/editorial-magazine-explainer-producer/references/revision-qa-and-closure.md"
+      ]
+    },
+    {
+      "id": "V27",
+      "text": "无明确理由缺少背景音乐，或音乐压住口播；",
+      "source_line": 391,
+      "enforcement": "真实媒体/结构校验加对应视听或语义审核；不能用布尔值替代实际证据",
+      "references": [
+        "skills/magazine-production/references/quality-contract.md",
+        "vendor/editorial-magazine-explainer-producer/references/revision-qa-and-closure.md"
+      ]
+    },
+    {
+      "id": "V28",
+      "text": "复用任一历史项目BGM，或本条BGM没有音乐简报、来源、曲目身份、音频指纹、文件哈希和全项目登记册检查；",
+      "source_line": 392,
+      "enforcement": "真实媒体/结构校验加对应视听或语义审核；不能用布尔值替代实际证据",
+      "references": [
+        "skills/magazine-production/references/quality-contract.md",
+        "scripts/production_runner.py",
+        "vendor/editorial-magazine-explainer-producer/scripts/validate_production_enforcement.py"
+      ]
+    },
+    {
+      "id": "V29",
+      "text": "返工修改了锁定的 Flow、音频、字幕或时间轴；",
+      "source_line": 393,
+      "enforcement": "真实媒体/结构校验加对应视听或语义审核；不能用布尔值替代实际证据",
+      "references": [
+        "skills/magazine-production/references/quality-contract.md",
+        "vendor/editorial-magazine-explainer-producer/references/revision-qa-and-closure.md"
+      ]
+    },
+    {
+      "id": "V30",
+      "text": "字幕自动换行、断词、裁切或贴边；",
+      "source_line": 394,
+      "enforcement": "真实媒体/结构校验加对应视听或语义审核；不能用布尔值替代实际证据",
+      "references": [
+        "skills/magazine-production/references/quality-contract.md",
+        "vendor/editorial-magazine-explainer-producer/references/revision-qa-and-closure.md"
+      ]
+    },
+    {
+      "id": "V31",
+      "text": "本地主要元素仍小而分散、未经逐镜检查就整体等比放大，或整幅插画放大越过原边框；",
+      "source_line": 395,
+      "enforcement": "真实媒体/结构校验加对应视听或语义审核；不能用布尔值替代实际证据",
+      "references": [
+        "skills/magazine-production/references/quality-contract.md",
+        "vendor/editorial-magazine-explainer-producer/references/revision-qa-and-closure.md"
+      ]
+    },
+    {
+      "id": "V32",
+      "text": "字幕层级低于背景、字号不舒适、没有向中心安全区优化，或遮挡主视觉/解释文字；",
+      "source_line": 396,
+      "enforcement": "真实媒体/结构校验加对应视听或语义审核；不能用布尔值替代实际证据",
+      "references": [
+        "skills/magazine-production/references/quality-contract.md",
+        "vendor/editorial-magazine-explainer-producer/references/revision-qa-and-closure.md"
+      ]
+    },
+    {
+      "id": "V33",
+      "text": "未完整观看、未做桌面哈希核对就交付；",
+      "source_line": 397,
+      "enforcement": "真实媒体/结构校验加对应视听或语义审核；不能用布尔值替代实际证据",
+      "references": [
+        "skills/magazine-production/references/quality-contract.md",
+        "scripts/production_runner.py",
+        "vendor/editorial-magazine-explainer-producer/scripts/validate_production_enforcement.py"
+      ]
+    },
+    {
+      "id": "V34",
+      "text": "正式生产仍使用旧 schema，或只用布尔勾选而没有真实证据文件；",
+      "source_line": 398,
+      "enforcement": "真实媒体/结构校验加对应视听或语义审核；不能用布尔值替代实际证据",
+      "references": [
+        "skills/magazine-production/references/quality-contract.md",
+        "scripts/production_runner.py",
+        "vendor/editorial-magazine-explainer-producer/scripts/validate_production_enforcement.py"
+      ]
+    },
+    {
+      "id": "V35",
+      "text": "旁链后 BGM 全片或任一关键分段低到实质不可感知，只因总响度合格就宣称声音通过；",
+      "source_line": 399,
+      "enforcement": "真实媒体/结构校验加对应视听或语义审核；不能用布尔值替代实际证据",
+      "references": [
+        "skills/magazine-production/references/quality-contract.md",
+        "vendor/editorial-magazine-explainer-producer/references/revision-qa-and-closure.md"
+      ]
+    },
+    {
+      "id": "V36",
+      "text": "把“成片通过”写成“已发布”，或未经授权代替用户发布。",
+      "source_line": 400,
+      "enforcement": "真实媒体/结构校验加对应视听或语义审核；不能用布尔值替代实际证据",
+      "references": [
+        "skills/magazine-production/references/quality-contract.md",
+        "vendor/editorial-magazine-explainer-producer/references/revision-qa-and-closure.md"
+      ]
+    },
+    {
+      "id": "V37",
+      "text": "已经交付给学生的资料仍保留“评论区留言领取本资料”等领取前话术。",
+      "source_line": 401,
+      "enforcement": "真实媒体/结构校验加对应视听或语义审核；不能用布尔值替代实际证据",
+      "references": [
+        "skills/magazine-production/references/quality-contract.md",
+        "vendor/editorial-magazine-explainer-producer/references/revision-qa-and-closure.md"
+      ]
+    }
+  ],
+  "additional_current_user_requirements": [
+    "标题居中且大字醒目，背景围绕标题设计",
+    "手动素材与发布包同层，不让用户进出多个文件夹",
+    "温情不等于忧郁，音乐须听感确认",
+    "用户明确自检时不重复逐图问，执行授权与视觉认可分别记",
+    "新导出文件核身份，不让旧曲冒充新曲",
+    "已设置定时不等于已发布",
+    "局部修补不牵动全片，收费重试有边界"
+  ],
+  "all_source_sections": [
+    "开工、继续与修改的固定解释",
+    "运行时瘦身协议（每个项目必须执行）",
+    "正式生产计时与当天交付目标",
+    "路径解析（跨电脑必须先做）",
+    "0. 执行授权",
+    "1. 启动必读与续做路由",
+    "2. 建立机器可检验的项目合同",
+    "3. 母钟与字幕先锁定",
+    "4. 语义先于画面",
+    "5. 节奏与理解时间",
+    "6. 解释文字与语义容器",
+    "7. Gate 2：导演理解、完整故事板、动态分镜与真样片",
+    "8. Gate 2.5：样片通过后生产有机动态镜头",
+    "9. 正式合成",
+    "10. 返工先锁边界",
+    "11. Gate 3 与最终质检",
+    "11.5 Gate 3.5：发布包，不是发布",
+    "12. 收束、清理与发布闭环",
+    "一票否决"
+  ]
+}

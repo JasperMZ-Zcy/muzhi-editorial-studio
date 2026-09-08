@@ -1,0 +1,41 @@
+# Python runtime and local environments
+__pycache__/
+*.py[cod]
+*.pyo
+.venv/
+venv/
+
+# Credentials and machine-local configuration
+.env
+.env.*
+*.pem
+*.key
+*.p12
+*.pfx
+*.kdbx
+local-config/
+private-config/
+secrets/
+*.local.json
+
+# Project runtime state, media, exports, and user data
+artifacts/
+media/
+recordings/
+students/
+output/
+renders/
+exports/
+*.wav
+*.mp3
+*.m4a
+*.mp4
+*.mov
+*.webm
+*.png
+*.jpg
+*.jpeg
+*.webp
+
+# Release receipts belong to the local installation, not the public package
+bundle-receipt.json
