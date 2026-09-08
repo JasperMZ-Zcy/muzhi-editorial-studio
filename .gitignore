@@ -39,3 +39,9 @@ exports/
 
 # Release receipts belong to the local installation, not the public package
 bundle-receipt.json
+
+# Explicitly reviewed, user-authorized public showcase evidence only
+!docs/assets/showcase/school-fit-03s.jpg
+!docs/assets/showcase/school-fit-70s.jpg
+!docs/assets/showcase/warm-study-84s.jpg
+!docs/assets/showcase/douyin-performance.png
