@@ -1,0 +1,15 @@
+{
+  "platform": "抖音",
+  "account_name": "牧之远见",
+  "douyin_id": "48912361214",
+  "post_id": "7678303397522574642",
+  "post_url": "https://www.iesdouyin.com/share/video/7678303397522574642/",
+  "published_at": "2026-08-26T19:38:52+08:00",
+  "screenshot_recorded_at": "2026-08-27T22:41:50+08:00",
+  "timing_note": "晚采的约27小时累计截图，非准点24小时，也非当前最新值",
+  "file": "douyin-performance.png",
+  "sha256": "8a714b774c372051db34134286c73d2bea3292e8664b2790a717193132624b70",
+  "metrics_visible": {"plays_display":"2.34万","likes":423,"comments":225,"saves":287,"shares":41,"average_watch_seconds":11.6},
+  "metric_pixels_edited": false,
+  "scope": "账号的一条历史实际作品，使用插件前身流程，不代表插件带来的因果增长或可复制收益"
+}

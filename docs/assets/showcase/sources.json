@@ -1,0 +1,23 @@
+[
+  {
+    "file": "school-fit-03s.jpg",
+    "source_title": "择校知识口播",
+    "source_time_seconds": 3,
+    "actual_exported_video_frame": true,
+    "sha256": "53e95cae08a7000f828a22a43eeb11607f15ea4cdbbc9f7e338bf2729a929e04"
+  },
+  {
+    "file": "school-fit-70s.jpg",
+    "source_title": "择校知识口播",
+    "source_time_seconds": 70,
+    "actual_exported_video_frame": true,
+    "sha256": "950748f867f4fc4ca577617f3751df8305ac47580553fd7267b478834ca29e0a"
+  },
+  {
+    "file": "warm-study-84s.jpg",
+    "source_title": "考研情绪陪伴口播",
+    "source_time_seconds": 84,
+    "actual_exported_video_frame": true,
+    "sha256": "7ba63fb1e2e06f53bfea6c99a9943b756df51fa9e37656a28ab0f8c6168b8dc3"
+  }
+]
