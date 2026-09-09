@@ -1,0 +1,36 @@
+{
+  "asset_id": "shotcraft-list-reveal-pilot-20260909",
+  "title": "Low-intensity readable list reveal reference",
+  "route": "editorial-magazine-explainer",
+  "asset_type": "motion-reference-card",
+  "purpose": "Give rules, steps, or options a calm, readable entry without competing with narration.",
+  "source_project": "external-reference: Vincentwei1021/video-shotcraft@5f047c7cfe10d6616fe59160a750fcfaea510b2e",
+  "availability": "present",
+  "reuse_conditions": [
+    "Recalculate timing and wrapping for actual Chinese copy.",
+    "Use a current project style record.",
+    "No rendered implementation has been locally tested."
+  ],
+  "rights": {
+    "status": "cleared",
+    "notes": "Unmodified text-only upstream recipe card under Apache-2.0; dark UI placeholders are not project assets."
+  },
+  "public_export_eligible": true,
+  "tags": [
+    "education-animation",
+    "editorial-magazine",
+    "low-intensity",
+    "list",
+    "reference-only"
+  ],
+  "search_text": "Low intensity list reveal reference for rules, stages, choices, and readable Chinese items.",
+  "project_output_approved": false,
+  "release_scope": "apache-2.0-source-text-reference",
+  "rights_review": {
+    "status": "approved-for-public-source-distribution",
+    "rights": "pass: Apache-2.0 source text retained with notice",
+    "privacy": "pass: no private project, account, device, or secret data",
+    "portability": "pass: standalone source/reference record",
+    "context": "pass: source distribution only, not factual or project-output approval"
+  }
+}

@@ -1,0 +1,34 @@
+{
+  "asset_id": "editorial-knowledge-pilot-components-public-v1",
+  "release_scope": "public-generic-source-only",
+  "asset_type": "remotion-template-source",
+  "included": [
+    "src/ConditionComparison.tsx",
+    "src/LayeredQuestionCard.tsx",
+    "src/TimelineProgress.tsx",
+    "src/Root.tsx",
+    "src/ShotcraftPilot.tsx",
+    "src/theme.ts",
+    "src/index.tsx",
+    "render-sample.mjs"
+  ],
+  "excluded": [
+    "rendered video",
+    "keyframes",
+    "audio",
+    "fonts",
+    "project receipts",
+    "historical project SHA records",
+    "student or account data"
+  ],
+  "source_relationship": "Locally authored generic implementations inspired by named motion mechanisms; no upstream demo code, media, copy, or layout data is included.",
+  "rights_review": {
+    "status": "approved-for-public-source-distribution",
+    "rights": "pass: local source with Apache-2.0 attribution retained for referenced mechanisms",
+    "privacy": "pass: no person, project, account, device, or secret data",
+    "portability": "pass: requires only an existing React and Remotion runtime plus a project's available fonts",
+    "context": "pass: generic technical source, not a production-approved visual style or factual content asset"
+  },
+  "public_export_eligible": true,
+  "project_output_approved": false
+}

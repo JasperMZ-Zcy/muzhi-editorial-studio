@@ -1,0 +1,36 @@
+{
+  "asset_id": "shotcraft-ring-diagram-annotation-reveal-pilot-20260909",
+  "title": "Mechanism diagram focus-and-annotation reference",
+  "route": "editorial-magazine-explainer",
+  "asset_type": "motion-reference-card",
+  "purpose": "Make an abstract mechanism readable as a focal subject, structure, and annotation sequence.",
+  "source_project": "external-reference: Vincentwei1021/video-shotcraft@5f047c7cfe10d6616fe59160a750fcfaea510b2e",
+  "availability": "present",
+  "reuse_conditions": [
+    "Keep rings, arrows, and labels semantically separate.",
+    "Use a current project style record.",
+    "No rendered implementation has been locally tested."
+  ],
+  "rights": {
+    "status": "cleared",
+    "notes": "Unmodified text-only upstream recipe card under Apache-2.0; original demo assets are not included."
+  },
+  "public_export_eligible": true,
+  "tags": [
+    "education-animation",
+    "editorial-magazine",
+    "diagram",
+    "mechanism",
+    "reference-only"
+  ],
+  "search_text": "Ring diagram motion reference for a process, system, concept, or mechanism explanation.",
+  "project_output_approved": false,
+  "release_scope": "apache-2.0-source-text-reference",
+  "rights_review": {
+    "status": "approved-for-public-source-distribution",
+    "rights": "pass: Apache-2.0 source text retained with notice",
+    "privacy": "pass: no private project, account, device, or secret data",
+    "portability": "pass: standalone source/reference record",
+    "context": "pass: source distribution only, not factual or project-output approval"
+  }
+}

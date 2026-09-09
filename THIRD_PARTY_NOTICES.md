@@ -1,0 +1,25 @@
+# Third-party notices
+
+## video-shotcraft recipe-card text
+
+`plugins/muzhi-editorial-studio/assets/shotcraft/full-cards/`, the accompanying
+fixed-source metadata, and `assets/shotcraft/LICENSE` include or describe
+text-only recipe cards from `Vincentwei1021/video-shotcraft` at commit
+`5f047c7cfe10d6616fe59160a750fcfaea510b2e`.
+
+Those recipe-card text files are provided under Apache License 2.0. The full
+Apache-2.0 text is retained at
+`plugins/muzhi-editorial-studio/assets/shotcraft/LICENSE`. Per-card source
+paths, fixed Git blob SHA-1 values, and source URLs are in
+`assets/shotcraft/full-index.json`.
+
+The retained upstream Apache-2.0 license includes the notice `Copyright 2026
+Wei Yihao`; that notice remains with the source-text distribution.
+
+This notice does not relicense the rest of this repository. The repository's
+top-level MIT license continues to apply only where its own terms apply.
+
+No upstream preview video, audio, gallery media, demo implementation, template,
+dependency tree, or upstream Skill is included by this release. Gallery URLs in
+the index are live reference links only; they are not pinned or locally verified
+media.

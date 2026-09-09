@@ -15,6 +15,12 @@ description: 杂志插画视频的插件制作入口。用于开始、继续、�
 
 获本任务授权后，用`init`创建`artifacts/editorial-plugin-state.json`。它只管理插件版本、当前阶段、项目覆盖、锁定与批准；原`project.json`和旧产线合同仍管理实际业务与媒体事实。二者矛盾时根据最新用户原话、真实文件和已存在回执解决，不能任取一个或重复生产。旧项目需明确导入哪些已完成事项，不把`init`当成历史审批。
 
+### 新知识片先选语义表现路线
+
+新知识片在导演理解、导演板和镜头脚本之前，先读[导演前语义路线](references/pre-director-routing.md)。按口播与证据把每段记录为既有`visual_route`之一，再为`native_mg`、`official_evidence`、`sourced_chart`或`vox_layered_broll`主动从镜头库检索`library_candidates`；镜头库是这些既有路线的解释机制，不能另造`motion-library`路线。人物或环境的真实动作仍是`image_to_video`，需要混合时按既有`hybrid`职责接力。
+
+路线草案可写在现有施工单或导演准备记录附表，并用`python <插件根>/scripts/motion_plan.py validate --project <项目> --plan <路线文件> --stage pre-director`做只读审计。它不生成、不替代原 Gate，也不重开已批准的旧导演板。仅当某段实际走`image_to_video`且本片渠道未知时，才按原渠道规则问一次。
+
 每轮结束同步一份当前施工单摘要，旧段落明确历史。禁止持续在头部堆互相矛盾的“最新”记录。工具的状态文件只是协议，不是不能被用户指令改变的权限系统。
 
 ## 保持稳定，允许创意
@@ -47,6 +53,10 @@ description: 杂志插画视频的插件制作入口。用于开始、继续、�
 使用旧校验器前阅读所需模板与参数；不关闭检查、不伪造通过，也不修改旧schema字段来让错误内容通关。新项目需要的实际合同按实际证据创建，项目状态工具不替代音画QA。
 
 ## 生成与修改
+
+### 镜头库作为解释机制
+
+对新知识片的比较、流程、因果、官方证据与有来源数据段，先按[Shotcraft 知识解释镜头参考](references/shotcraft-integration.md)检索固定来源的 157 张本地文字卡；先`search`得到紧凑候选，再`select`并只`read`需要的 1—3 张。卡文本本地可读不等于生产通过，仍须由本片的`design.md`、事实来源、字幕、声音和质量合同决定。卡不能强迫每句都有动效，也不改变旧片或局部封面任务。
 
 图生视频渠道每条新片都由用户选择，详读[渠道切换与合成解耦](references/video-provider-routing.md)。未指定就问一次，已明确指定就登记并继续；不得默认沿用上一条的平台。WAN/MiniMax走已有API，Google Flow给首帧/提示词单层手动包，临时新平台按API或手动方式接入。中途切换只作用于未提交镜头，旧任务ID/费用/已通过素材保留。合成统一读取供应商无关的本地镜头合同。
 

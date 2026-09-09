@@ -1,0 +1,327 @@
+{
+  "schema_version": 1,
+  "catalog_id": "muzhi-editorial-shotcraft-pilot-20260909",
+  "upstream": {
+    "repository": "https://github.com/Vincentwei1021/video-shotcraft",
+    "commit": "5f047c7cfe10d6616fe59160a750fcfaea510b2e",
+    "license": "Apache-2.0",
+    "license_blob_sha1": "71ffb8bd20fc152507c1b3dd48f2890bef493ca6",
+    "source_checked_at": "2026-09-09",
+    "scope": "Six text-only recipe cards; no preview media, audio, template, dependency tree, or upstream SKILL is vendored."
+  },
+  "style_contract": {
+    "precedence": [
+      "project design.md",
+      "brand-approved style",
+      "motion recipe"
+    ],
+    "record_path": "artifacts/shotcraft-style-contract.json",
+    "required_fields": [
+      "design_source",
+      "design_sha256",
+      "palette",
+      "font",
+      "safe_area",
+      "motion_intensity"
+    ],
+    "validation": "The current executing assistant reads the current design.md and records the six fields; this selector validates the declared source path and SHA-256 but does not claim to understand arbitrary Markdown. This record does not ask the user to fill JSON or create another approval.",
+    "inherit": [
+      "primary colors",
+      "typefaces",
+      "paper material",
+      "illustration treatment",
+      "layout",
+      "caption safe zone"
+    ],
+    "forbid": [
+      "upstream English SaaS UI",
+      "upstream default palette",
+      "upstream placeholder icons or copy",
+      "a library fallback when a project style contract is absent"
+    ],
+    "revision_rule": "If design_sha256 drifts, affected shots require review. No lock, approval, render, or old project is changed automatically.",
+    "knowledge_use": "New knowledge-explainer plans should actively search cards for comparison, process, causality, evidence, and data beats when they improve understanding; do not force a card into every sentence or shorten reading time."
+  },
+  "execution_boundary": {
+    "catalog_is": "A read-only storyboard reference selector.",
+    "catalog_is_not": [
+      "a second production workflow",
+      "a renderer or locally proven implementation",
+      "a provider selector, provider client, or CLI installer",
+      "a budget approval or publishing approval"
+    ],
+    "production_routes_remain": {
+      "google-flow": "manual first-frame and prompt flatpack only",
+      "wan": "existing configured API only after project selection and budget authorization",
+      "minimax": "existing configured API only after project selection and budget authorization"
+    }
+  },
+  "local_adaptations": {
+    "knowledge-pilot-v1": {
+      "template_path": "assets/shotcraft/templates/knowledge-pilot",
+      "receipt_path": "assets/shotcraft/templates/knowledge-pilot/receipt.json",
+      "source_project": "editorial-shotcraft-pilot-20260909/sample",
+      "verified_default_preview": {
+        "frames": 540,
+        "duration_seconds": 18,
+        "sha256": "14f7df361e35ca40b73144c9a6e05e301dd2e5e271a811708bdeacef01d1c54f"
+      },
+      "scope": "Three local generic source components. They adapt selected motion mechanisms; they are not copied upstream demos and do not validate every upstream variant or a future project's visual/audio/subtitle result.",
+      "public_export_eligible": false
+    }
+  },
+  "shots": [
+    {
+      "id": "depth-layer-moves",
+      "title": "分层视差与克制的伪 dolly-zoom",
+      "category": "camera",
+      "purpose": "让资料页、证据卡或语义图解在不拆原排版的前提下获得可读的空间纵深。",
+      "intensity": "medium",
+      "implementation_status": "reference-only",
+      "locally_render_tested": false,
+      "implementation_template": "none; only the motion mechanism may be recreated in a locally approved project composition",
+      "local_adaptation": {
+        "template": "knowledge-pilot-v1",
+        "component": "src/LayeredQuestionCard.tsx",
+        "verification": "default preview only; card remains reference-only"
+      },
+      "source_card_path": "references/shots/camera/depth-layer-moves.md",
+      "vendored_card": "assets/shotcraft/cards/depth-layer-moves.md",
+      "upstream_blob_sha1": "fc0155d338c8825e86d5e0c1c36d2d5dec555b45",
+      "source_license": "Apache-2.0",
+      "style_contract": "project-design-required",
+      "reuse_conditions": [
+        "Keep the main reading layer crisp and use no more than four depth layers.",
+        "Use dolly-zoom at most once in a film.",
+        "Do not combine untested tilted perspective without a real visual review."
+      ],
+      "public_export_eligible": true,
+      "tags": [
+        "knowledge-explainer",
+        "evidence-card",
+        "parallax",
+        "depth",
+        "vertical-adaptation"
+      ],
+      "search_text": "资料卡 证据卡 图解 分层 视差 纵深 克制运镜",
+      "project_output_approved": false,
+      "release_scope": "apache-2.0-source-text-reference",
+      "rights_review": {
+        "status": "approved-for-public-source-distribution",
+        "rights": "pass: Apache-2.0 source text retained with notice",
+        "privacy": "pass: no private project, account, device, or secret data",
+        "portability": "pass: standalone source/reference record",
+        "context": "pass: source distribution only, not factual or project-output approval"
+      }
+    },
+    {
+      "id": "timeline-travel",
+      "title": "阶段与里程碑的时间轴旅行",
+      "category": "data",
+      "purpose": "把真实流程、政策节点、成长阶段或里程碑读成由过去抵达当前的节奏。",
+      "intensity": "medium-high",
+      "implementation_status": "reference-only",
+      "locally_render_tested": false,
+      "implementation_template": "none; retain only the accelerate-pass-brake motion grammar after a local layout is built",
+      "local_adaptation": {
+        "template": "knowledge-pilot-v1",
+        "component": "src/TimelineProgress.tsx",
+        "verification": "default preview only; card remains reference-only"
+      },
+      "source_card_path": "references/shots/data/timeline-travel.md",
+      "vendored_card": "assets/shotcraft/cards/timeline-travel.md",
+      "upstream_blob_sha1": "44832e1819a50e8f88b94ae37919ea2d1d6bea84",
+      "source_license": "Apache-2.0",
+      "style_contract": "project-design-required",
+      "reuse_conditions": [
+        "Replace all milestones and labels with verified facts.",
+        "Leave final Chinese copy a real reading hold.",
+        "Do not carry over upstream sound cues."
+      ],
+      "public_export_eligible": true,
+      "tags": [
+        "knowledge-explainer",
+        "timeline",
+        "milestone",
+        "process",
+        "history"
+      ],
+      "search_text": "时间轴 里程碑 发展史 阶段 政策节点 流程",
+      "project_output_approved": false,
+      "release_scope": "apache-2.0-source-text-reference",
+      "rights_review": {
+        "status": "approved-for-public-source-distribution",
+        "rights": "pass: Apache-2.0 source text retained with notice",
+        "privacy": "pass: no private project, account, device, or secret data",
+        "portability": "pass: standalone source/reference record",
+        "context": "pass: source distribution only, not factual or project-output approval"
+      }
+    },
+    {
+      "id": "chart-live-moves",
+      "title": "有真实数据语境的动态图表",
+      "category": "data",
+      "purpose": "用可阅读的图表动作解释已核实的变化、构成或一个需要关注的异常。",
+      "intensity": "medium-high",
+      "implementation_status": "reference-only",
+      "locally_render_tested": false,
+      "implementation_template": "none; a new local chart must bind to verified data, units, labels, and accessibility review",
+      "local_adaptation": {
+        "template": "knowledge-pilot-v1",
+        "component": "src/ConditionComparison.tsx",
+        "verification": "default preview uses qualitative notes, not real data; card remains reference-only"
+      },
+      "source_card_path": "references/shots/data/chart-live-moves.md",
+      "vendored_card": "assets/shotcraft/cards/chart-live-moves.md",
+      "upstream_blob_sha1": "cc9c8aea4de2072c753d520aec7c108b5f2bd7fb",
+      "source_license": "Apache-2.0",
+      "style_contract": "project-design-required",
+      "reuse_conditions": [
+        "Use only verified numbers, units, axes, titles, and evidence references.",
+        "Choose one chart mechanism for a beat.",
+        "Leave a genuine still reading interval."
+      ],
+      "public_export_eligible": true,
+      "tags": [
+        "knowledge-explainer",
+        "chart",
+        "data",
+        "evidence",
+        "change"
+      ],
+      "search_text": "图表 数据 变化 构成 增长 趋势 真实数值",
+      "project_output_approved": false,
+      "release_scope": "apache-2.0-source-text-reference",
+      "rights_review": {
+        "status": "approved-for-public-source-distribution",
+        "rights": "pass: Apache-2.0 source text retained with notice",
+        "privacy": "pass: no private project, account, device, or secret data",
+        "portability": "pass: standalone source/reference record",
+        "context": "pass: source distribution only, not factual or project-output approval"
+      }
+    },
+    {
+      "id": "ring-diagram-annotation-reveal",
+      "title": "主体到机制再到注释的环形图解",
+      "category": "data",
+      "purpose": "把抽象关系、机制或流程收束成可读的主体—结构—注释图解。",
+      "intensity": "medium-high",
+      "implementation_status": "reference-only",
+      "locally_render_tested": false,
+      "implementation_template": "none; recreate with project-local SVG or DOM and vertical safe zones, not upstream demo files",
+      "source_card_path": "references/shots/data/ring-diagram-annotation-reveal.md",
+      "vendored_card": "assets/shotcraft/cards/ring-diagram-annotation-reveal.md",
+      "upstream_blob_sha1": "8e3bb7dd2db9d5dc78d5f6fa143d7109be6ef3cc",
+      "source_license": "Apache-2.0",
+      "style_contract": "project-design-required",
+      "reuse_conditions": [
+        "Keep rings, arrows, and labels semantically distinct.",
+        "Adapt final reading frame to 9:16 and subtitle-safe zones.",
+        "Do not add decorative HUD motion."
+      ],
+      "public_export_eligible": true,
+      "tags": [
+        "knowledge-explainer",
+        "mechanism",
+        "diagram",
+        "annotation",
+        "process"
+      ],
+      "search_text": "机制 关系 环形图 流程 注释 概念科普",
+      "project_output_approved": false,
+      "release_scope": "apache-2.0-source-text-reference",
+      "rights_review": {
+        "status": "approved-for-public-source-distribution",
+        "rights": "pass: Apache-2.0 source text retained with notice",
+        "privacy": "pass: no private project, account, device, or secret data",
+        "portability": "pass: standalone source/reference record",
+        "context": "pass: source distribution only, not factual or project-output approval"
+      }
+    },
+    {
+      "id": "research-card-stack-scroll",
+      "title": "资料检索量级的焦点卡片堆叠",
+      "category": "ui-entrance",
+      "purpose": "交代经过多份可公开核验材料的检索或整理，同时保持唯一主阅读焦点。",
+      "intensity": "medium-high",
+      "implementation_status": "reference-only",
+      "locally_render_tested": false,
+      "implementation_template": "none; use only a project-local list of redacted or publishable source titles after evidence review",
+      "source_card_path": "references/shots/ui-entrance/research-card-stack-scroll.md",
+      "vendored_card": "assets/shotcraft/cards/research-card-stack-scroll.md",
+      "upstream_blob_sha1": "31b4b3e3c602a388b251bde677d2ccaa1915857e",
+      "source_license": "Apache-2.0",
+      "style_contract": "project-design-required",
+      "reuse_conditions": [
+        "Use only review-cleared source titles.",
+        "Exclude students, accounts, consultations, and unlicensed source media.",
+        "Choose list-reveal if Chinese text cannot be read."
+      ],
+      "public_export_eligible": true,
+      "tags": [
+        "knowledge-explainer",
+        "research",
+        "evidence",
+        "document",
+        "source-card"
+      ],
+      "search_text": "资料 检索 文献 证据 多份材料 卡片堆叠",
+      "project_output_approved": false,
+      "release_scope": "apache-2.0-source-text-reference",
+      "rights_review": {
+        "status": "approved-for-public-source-distribution",
+        "rights": "pass: Apache-2.0 source text retained with notice",
+        "privacy": "pass: no private project, account, device, or secret data",
+        "portability": "pass: standalone source/reference record",
+        "context": "pass: source distribution only, not factual or project-output approval"
+      }
+    },
+    {
+      "id": "list-reveal",
+      "title": "低强度可读列表显现",
+      "category": "ui-entrance",
+      "purpose": "为规则、步骤、选项或旁白铺垫提供逐项可读且不过度抢戏的低强度运动。",
+      "intensity": "low",
+      "implementation_status": "reference-only",
+      "locally_render_tested": false,
+      "implementation_template": "none; rebuild with current project typography and explicit end-state alignment for the next shot",
+      "source_card_path": "references/shots/ui-entrance/list-reveal.md",
+      "vendored_card": "assets/shotcraft/cards/list-reveal.md",
+      "upstream_blob_sha1": "fdedc96c6db3c09a6a8c79705fd9c17f704a887d",
+      "source_license": "Apache-2.0",
+      "style_contract": "project-design-required",
+      "reuse_conditions": [
+        "Recalculate timing and wrapping for actual Chinese copy.",
+        "Use approved project typography and icons.",
+        "Resolve container drift before a cut that needs pixel alignment."
+      ],
+      "public_export_eligible": true,
+      "tags": [
+        "knowledge-explainer",
+        "low-intensity",
+        "list",
+        "rules",
+        "steps",
+        "readability"
+      ],
+      "search_text": "低强度 逐项 列表 规则 步骤 选项 可读性",
+      "project_output_approved": false,
+      "release_scope": "apache-2.0-source-text-reference",
+      "rights_review": {
+        "status": "approved-for-public-source-distribution",
+        "rights": "pass: Apache-2.0 source text retained with notice",
+        "privacy": "pass: no private project, account, device, or secret data",
+        "portability": "pass: standalone source/reference record",
+        "context": "pass: source distribution only, not factual or project-output approval"
+      }
+    }
+  ],
+  "release_scope": "public-source-reference-only",
+  "rights_review": {
+    "status": "approved-for-public-source-distribution",
+    "rights": "Apache-2.0 source text retained with notice",
+    "privacy": "no private project or account data",
+    "portability": "standalone text mechanism references",
+    "context": "not a preapproved production asset"
+  }
+}

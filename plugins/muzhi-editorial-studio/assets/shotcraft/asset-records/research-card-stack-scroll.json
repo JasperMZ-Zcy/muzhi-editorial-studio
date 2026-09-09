@@ -1,0 +1,36 @@
+{
+  "asset_id": "shotcraft-research-card-stack-scroll-pilot-20260909",
+  "title": "Single-focus research-card stack reference",
+  "route": "editorial-magazine-explainer",
+  "asset_type": "motion-reference-card",
+  "purpose": "Communicate a volume of review-cleared research materials while retaining a single readable card.",
+  "source_project": "external-reference: Vincentwei1021/video-shotcraft@5f047c7cfe10d6616fe59160a750fcfaea510b2e",
+  "availability": "present",
+  "reuse_conditions": [
+    "Use only review-cleared, publishable source titles.",
+    "Use a current project style record.",
+    "No rendered implementation has been locally tested."
+  ],
+  "rights": {
+    "status": "cleared",
+    "notes": "Unmodified text-only upstream recipe card under Apache-2.0; private source material is not copied."
+  },
+  "public_export_eligible": true,
+  "tags": [
+    "education-animation",
+    "editorial-magazine",
+    "research",
+    "evidence",
+    "reference-only"
+  ],
+  "search_text": "Research card stack reference for multiple documents, evidence collection, and reading throughput.",
+  "project_output_approved": false,
+  "release_scope": "apache-2.0-source-text-reference",
+  "rights_review": {
+    "status": "approved-for-public-source-distribution",
+    "rights": "pass: Apache-2.0 source text retained with notice",
+    "privacy": "pass: no private project, account, device, or secret data",
+    "portability": "pass: standalone source/reference record",
+    "context": "pass: source distribution only, not factual or project-output approval"
+  }
+}
